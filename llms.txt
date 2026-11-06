@@ -1,0 +1,30 @@
+# Agha Malik Baig Mirza
+
+> Design verification and RTL engineer candidate. M.S. Computer Engineering at California State University, Northridge (CSUN), graduating December 2026, based in Northridge, California. Looking for full-time Design Verification and RTL roles starting January 2027. Also appears as Mirza Malik Baig and Mirza Agha Malik Baig.
+
+Focus: SystemVerilog and UVM testbenches with scoreboards, functional coverage, assertions, and AMBA APB and AXI4 protocols. Tools used: Synopsys VCS, Verilator.
+
+## Profiles
+
+- [Portfolio](https://mirzamalikbaig.github.io/): projects, experience, education, and contact details.
+- [Resume (PDF)](https://mirzamalikbaig.github.io/resume.pdf): current resume.
+- [GitHub](https://github.com/mirzamalikbaig): all public repositories.
+- [LinkedIn](https://www.linkedin.com/in/mirzamalikbaig): professional profile.
+
+## Projects
+
+- [APB memory: design and UVM verification](https://github.com/mirzamalikbaig/apb_uvm): AMBA APB memory slave with a UVM environment that has a directed sequence, a reference-memory scoreboard, and functional coverage. Run in Synopsys VCS.
+- [AXI4 memory: UVM verification environment](https://github.com/mirzamalikbaig/axi4_uvm): UVM environment for a memory-mapped AXI4 slave covering all five channels. The recorded VCS run reached 98.15% functional coverage with 0 UVM errors across 12 directed scenarios.
+- [Asynchronous FIFO](https://github.com/mirzamalikbaig/async_fifo): 16-entry, 8-bit FIFO with separate read and write clocks, Gray-coded pointers, and two-flop synchronizers. Checked with a scoreboard, six SVA checks, and seven directed tests in Verilator. A learning project.
+- [Synchronous memory testbench](https://github.com/mirzamalikbaig/memory_verification): class-based SystemVerilog testbench for a synchronous memory with generator, driver, monitor, scoreboard, and coverage.
+
+## Experience and education
+
+- Verification Intern, Aisemi Pvt. Ltd. (January to April 2024): SystemVerilog RTL and testbenches, simulation and waveform debug with Synopsys tools.
+- Industrial Trainee, Electronics Corporation of India Limited (November 2019 to March 2020): supervised circuit testing and basic hardware troubleshooting.
+- M.S. in Computer Engineering, CSUN (August 2024 to December 2026).
+- B.E. in Electronics and Communication Engineering, Osmania University (2021 to 2023).
+
+## Contact
+
+Email and phone are listed in the Contact section of the [portfolio](https://mirzamalikbaig.github.io/#contact).
