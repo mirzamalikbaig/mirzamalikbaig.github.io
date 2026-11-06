@@ -269,7 +269,7 @@ section[id]{scroll-margin-top:72px}
   <div class="hero-text">
     <h1 id="name">Agha Malik<br>Baig Mirza</h1>
     <p class="role">Design Verification · M.S. Computer Engineering, CSUN</p>
-    <p class="lede">I build SystemVerilog and UVM testbenches with constrained-random stimulus, scoreboards, assertions, and functional coverage, mostly for AMBA APB and AXI4 designs.</p>
+    <p class="lede">I build SystemVerilog and UVM testbenches with scoreboards and functional coverage, plus constrained-random stimulus and assertions in my AXI4 environment, mostly for AMBA APB and AXI4 designs.</p>
     <p class="seeking">Looking for full-time Design Verification and RTL roles starting January 2027.</p>
     <div class="actions">
       <a class="btn primary" href="#contact">Get in touch</a>
@@ -291,9 +291,9 @@ section[id]{scroll-margin-top:72px}
     <h2 id="about-h">About</h2>
   </div>
   <div class="sec-body about">
-    <p>I'm a Computer Engineering master's student at California State University, Northridge, graduating in December 2026. My focus is design verification: building SystemVerilog and UVM testbenches that check a design automatically, using constrained-random stimulus, scoreboards, assertions, and functional coverage.</p>
+    <p>I'm a Computer Engineering master's student at California State University, Northridge, graduating in December 2026. My focus is design verification: building SystemVerilog and UVM testbenches that check a design automatically, using scoreboards, functional coverage, and, in my AXI4 environment, constrained-random stimulus and assertions.</p>
     <p>Before CSUN, I earned a B.E. in Electronics &amp; Communication Engineering from Osmania University, trained at ECIL in circuit testing and hardware troubleshooting, and worked as a verification intern at Aisemi, writing SystemVerilog RTL and testbenches and debugging them in Synopsys tools.</p>
-    <p>My recent projects are UVM environments for AMBA APB and AXI4 memories and a class-based FIFO testbench, described below.</p>
+    <p>My recent projects are UVM environments for AMBA APB and AXI4 memories and an asynchronous FIFO with Gray-coded pointers, described below.</p>
     <dl class="facts">
       <div><dt>Degree</dt><dd>M.S. Computer Engineering, CSUN</dd></div>
       <div><dt>Graduating</dt><dd>December 2026</dd></div>
@@ -306,7 +306,7 @@ section[id]{scroll-margin-top:72px}
 <section id="projects" class="wrap sec" aria-labelledby="projects-h">
   <div class="sec-label">
     <h2 id="projects-h">Projects</h2>
-    <p>Three testbenches for memory designs, from a class-based SystemVerilog environment to UVM on AMBA APB and AXI4.</p>
+    <p>Three projects: UVM environments for an AMBA APB memory and an AXI4 memory, and an asynchronous FIFO with Gray-coded clock domain crossing.</p>
   </div>
   <div class="sec-body">
 
@@ -314,17 +314,15 @@ section[id]{scroll-margin-top:72px}
       <div class="proj-head">
         <p class="kicker">UVM · AMBA APB · Synopsys VCS</p>
         <h3>APB memory: design and UVM verification</h3>
-        <p>I designed an AMBA APB memory slave and verified it with a UVM environment: constrained-random stimulus, a scoreboard, assertions, and functional coverage. Scoreboard failures and VCS waveforms pointed me to protocol and data mismatches; I corrected the RTL or the testbench, then closed coverage.</p>
+        <p>I designed an AMBA APB memory slave and verified it with a UVM environment: a directed sequence, a reference-memory scoreboard, and functional coverage. Scoreboard failures and VCS waveforms pointed me to protocol and data mismatches; I corrected the RTL or the testbench, then closed coverage.</p>
+        <a class="src" href="https://github.com/mirzamalikbaig/apb_uvm" target="_blank" rel="noopener">Source: github.com/mirzamalikbaig/apb_uvm</a>
       </div>
       <div class="proj-cols">
         <div>
           <h4>Self-checking tests</h4>
           <ul class="ticks">
-            <li>Reset behavior</li>
             <li>Read and write transfers</li>
-            <li>Boundary address and data values</li>
-            <li>Randomized address and data</li>
-            <li>Repeated accesses to the same location</li>
+            <li>Boundary data values: all zeros, all ones, alternating patterns</li>
             <li>Write followed by read, checking data integrity</li>
           </ul>
         </div>
@@ -344,7 +342,7 @@ section[id]{scroll-margin-top:72px}
       </div>
       <figure class="sheet fig">
         <div class="scroll-x dg-box">
-          <svg class="dg" viewBox="0 0 640 304" role="img" aria-label="UVM testbench: the test contains an environment with an agent (sequencer, driver, monitor), a scoreboard, and coverage. The driver and monitor connect through the APB interface to the DUT, an APB memory slave. Assertions check the interface.">
+          <svg class="dg" viewBox="0 0 640 304" role="img" aria-label="UVM testbench: the test contains an environment with an agent (sequencer, driver, monitor), a scoreboard, and coverage. The driver and monitor connect through the APB interface to the DUT, an APB memory slave.">
             <defs><marker id="ah1" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah" d="M0,0 L8,4 L0,8 z"/></marker></defs>
             <rect class="frame" x="8" y="8" width="624" height="200" rx="6"/>
             <text class="frame-l" x="20" y="25">TEST</text>
@@ -366,8 +364,6 @@ section[id]{scroll-margin-top:72px}
             <text class="comp" x="209" y="233" text-anchor="middle" dominant-baseline="central">APB interface</text>
             <rect class="dut" x="56" y="264" width="306" height="34" rx="4"/>
             <text class="comp comp-b" x="209" y="281" text-anchor="middle" dominant-baseline="central">DUT · APB memory slave</text>
-            <rect class="box" x="420" y="220" width="180" height="26" rx="4"/>
-            <text class="comp" x="510" y="233" text-anchor="middle" dominant-baseline="central">assertions</text>
             <path class="wire" d="M121,116 L121,143" marker-end="url(#ah1)"/>
             <text class="note" x="129" y="134">seq_item</text>
             <path class="wire" d="M121,178 L121,219" marker-end="url(#ah1)"/>
@@ -377,7 +373,6 @@ section[id]{scroll-margin-top:72px}
             <path class="wire" d="M209,246 L209,264"/>
             <path class="wire" d="M362,161 L419,161" marker-end="url(#ah1)"/>
             <path class="wire" d="M392,161 L392,99 L419,99" marker-end="url(#ah1)"/>
-            <path class="wire wire-d" d="M362,233 L420,233"/>
           </svg>
         </div>
         <figcaption class="fig-cap">UVM testbench structure for the APB memory.</figcaption>
@@ -442,30 +437,31 @@ section[id]{scroll-margin-top:72px}
 
     <article class="proj" id="fifo">
       <div class="proj-head">
-        <p class="kicker">SystemVerilog · Class-based testbench</p>
-        <h3>Synchronous FIFO: class-based verification environment</h3>
-        <p>A layered, class-based testbench for a parameterized synchronous FIFO, using directed and randomized tests, coverage, assertions, and waveform analysis.</p>
+        <p class="kicker">SystemVerilog · Clock domain crossing</p>
+        <h3>Asynchronous FIFO: Gray-coded pointers, scoreboard, and assertions</h3>
+        <p>A 16-entry, 8-bit FIFO with separate write and read clocks. Gray-coded pointers cross between the clock domains through two-flop synchronizers. A self-checking scoreboard, six SVA checks, and seven directed tests verify it. This is a learning project, run with Verilator and a Python regression script.</p>
+        <a class="src" href="https://github.com/mirzamalikbaig/async_fifo" target="_blank" rel="noopener">Source: github.com/mirzamalikbaig/async_fifo</a>
       </div>
       <div class="proj-cols">
         <div>
-          <h4>Conditions verified</h4>
+          <h4>Seven directed tests</h4>
           <ul class="ticks">
-            <li>Reads and writes</li>
-            <li>Simultaneous read and write</li>
-            <li>Full and empty flags</li>
-            <li>Overflow and underflow</li>
-            <li>Boundary conditions</li>
+            <li>Fill, check full, then read and compare every value</li>
+            <li>Write one value, read it, check empty</li>
+            <li>Writes while full are blocked and stored data stays correct</li>
+            <li>Reads while empty are blocked</li>
+            <li>Fill and drain four times so the pointers wrap</li>
+            <li>Concurrent writes and reads</li>
+            <li>Reset with pending data, then a new fill and drain</li>
           </ul>
         </div>
         <div class="sheet card">
-          <h4>Testbench flow</h4>
+          <h4>Clock domain crossing</h4>
           <ol class="chain">
-            <li><span>transaction</span></li>
-            <li><span>generator</span></li>
-            <li><span>driver</span></li>
-            <li class="dut"><span>FIFO (DUT)</span></li>
-            <li><span>monitor</span></li>
-            <li><span>scoreboard</span></li>
+            <li><span>binary pointer</span></li>
+            <li><span>Gray code</span></li>
+            <li><span>two-flop synchronizer</span></li>
+            <li class="dut"><span>full and empty flags</span></li>
           </ol>
         </div>
       </div>
@@ -511,23 +507,23 @@ section[id]{scroll-margin-top:72px}
               <th scope="col">Skill</th>
               <th scope="col">APB<small>UVM project</small></th>
               <th scope="col">AXI4<small>UVM project</small></th>
-              <th scope="col">FIFO<small>class-based</small></th>
+              <th scope="col">Async FIFO<small>design + checks</small></th>
               <th scope="col">Aisemi<small>internship</small></th>
             </tr>
           </thead>
           <tbody>
             <tr><th scope="row">SystemVerilog</th><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td></tr>
             <tr><th scope="row">UVM</th><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td><td class="n"><span class="sr">no</span></td><td class="n"><span class="sr">no</span></td></tr>
-            <tr><th scope="row">Class-based testbenches (OOP)</th><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td><td class="n"><span class="sr">no</span></td></tr>
-            <tr><th scope="row">Randomized stimulus</th><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td><td class="n"><span class="sr">no</span></td></tr>
+            <tr><th scope="row">Class-based testbenches (OOP)</th><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td><td class="n"><span class="sr">no</span></td><td class="n"><span class="sr">no</span></td></tr>
+            <tr><th scope="row">Randomized stimulus</th><td class="n"><span class="sr">no</span></td><td class="y"><span class="sr">yes</span></td><td class="n"><span class="sr">no</span></td><td class="n"><span class="sr">no</span></td></tr>
             <tr><th scope="row">Directed tests</th><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td><td class="n"><span class="sr">no</span></td></tr>
             <tr><th scope="row">Scoreboards</th><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td><td class="n"><span class="sr">no</span></td></tr>
-            <tr><th scope="row">Functional coverage</th><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td><td class="n"><span class="sr">no</span></td></tr>
-            <tr><th scope="row">Code coverage</th><td class="y"><span class="sr">yes</span></td><td class="n"><span class="sr">no</span></td><td class="n"><span class="sr">no</span></td><td class="n"><span class="sr">no</span></td></tr>
-            <tr><th scope="row">SystemVerilog Assertions</th><td class="y"><span class="sr">yes</span></td><td class="n"><span class="sr">no</span></td><td class="y"><span class="sr">yes</span></td><td class="n"><span class="sr">no</span></td></tr>
-            <tr><th scope="row">RTL design</th><td class="y"><span class="sr">yes</span></td><td class="n"><span class="sr">no</span></td><td class="n"><span class="sr">no</span></td><td class="y"><span class="sr">yes</span></td></tr>
-            <tr><th scope="row">Waveform debugging</th><td class="y"><span class="sr">yes</span></td><td class="n"><span class="sr">no</span></td><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td></tr>
-            <tr><th scope="row">Synopsys simulation tools</th><td class="y"><span class="sr">yes</span></td><td class="n"><span class="sr">no</span></td><td class="n"><span class="sr">no</span></td><td class="y"><span class="sr">yes</span></td></tr>
+            <tr><th scope="row">Functional coverage</th><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td><td class="n"><span class="sr">no</span></td><td class="n"><span class="sr">no</span></td></tr>
+            <tr><th scope="row">Code coverage</th><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td><td class="n"><span class="sr">no</span></td><td class="n"><span class="sr">no</span></td></tr>
+            <tr><th scope="row">SystemVerilog Assertions</th><td class="n"><span class="sr">no</span></td><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td><td class="n"><span class="sr">no</span></td></tr>
+            <tr><th scope="row">RTL design</th><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td></tr>
+            <tr><th scope="row">Waveform debugging</th><td class="y"><span class="sr">yes</span></td><td class="n"><span class="sr">no</span></td><td class="n"><span class="sr">no</span></td><td class="y"><span class="sr">yes</span></td></tr>
+            <tr><th scope="row">Synopsys simulation tools</th><td class="y"><span class="sr">yes</span></td><td class="y"><span class="sr">yes</span></td><td class="n"><span class="sr">no</span></td><td class="y"><span class="sr">yes</span></td></tr>
           </tbody>
         </table>
       </div>
@@ -537,7 +533,7 @@ section[id]{scroll-margin-top:72px}
       <div><dt>Languages and HDLs</dt><dd>SystemVerilog, Verilog, Python, C</dd></div>
       <div><dt>Tools</dt><dd>Synopsys VCS, DVE, QuestaSim/ModelSim, Xilinx Vivado, GTKWave, EDA Playground, Git, GitHub</dd></div>
       <div><dt>Protocols and architecture</dt><dd>AMBA APB, AXI4, SPI, I²C, UART, FIFO, pipelining, data/control hazards, memory hierarchy, ASIC design flow</dd></div>
-      <div><dt>Key concepts</dt><dd>RTL design and simulation, object-oriented programming, SystemVerilog Assertions, code and functional coverage, constraints, randomization, scoreboards, testbench development, waveform debugging</dd></div>
+      <div><dt>Key concepts</dt><dd>RTL design and simulation, object-oriented programming, SystemVerilog Assertions, clock domain crossing basics, code and functional coverage, constraints, randomization, scoreboards, testbench development, waveform debugging</dd></div>
     </dl>
   </div>
 </section>
