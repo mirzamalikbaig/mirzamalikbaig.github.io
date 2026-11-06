@@ -3,12 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Agha Malik Baig Mirza</title>
+<title>Agha Malik Baig Mirza | Design Verification Engineer Portfolio</title>
 <meta name="description" content="Agha Malik Baig Mirza: M.S. Computer Engineering (CSUN, Dec 2026), design verification with SystemVerilog, UVM, and AMBA APB/AXI4. Looking for full-time Design Verification and RTL roles from January 2027.">
+<link rel="canonical" href="https://mirzamalikbaig.github.io/">
+<meta name="author" content="Agha Malik Baig Mirza">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Agha Malik Baig Mirza">
 <meta property="og:url" content="https://mirzamalikbaig.github.io/">
 <meta property="og:title" content="Agha Malik Baig Mirza · Design Verification">
 <meta property="og:description" content="SystemVerilog and UVM verification projects. Looking for full-time Design Verification and RTL roles from January 2027.">
+<meta property="og:image" content="https://mirzamalikbaig.github.io/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Agha Malik Baig Mirza, Design Verification, SystemVerilog and UVM">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://mirzamalikbaig.github.io/og-card.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Agha Malik Baig Mirza",
+  "alternateName": ["Mirza Malik Baig", "Mirza Agha Malik Baig"],
+  "url": "https://mirzamalikbaig.github.io/",
+  "description": "M.S. Computer Engineering student at California State University, Northridge (December 2026), focused on design verification with SystemVerilog, UVM, and AMBA APB/AXI4.",
+  "knowsAbout": ["Design verification", "SystemVerilog", "UVM", "SystemVerilog Assertions", "AMBA APB", "AXI4", "RTL design"],
+  "sameAs": ["https://github.com/mirzamalikbaig", "https://www.linkedin.com/in/mirzamalikbaig"]
+}
+</script>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -195,7 +216,7 @@ section[id]{scroll-margin-top:72px}
 .repos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
 @media (max-width:1179px){.repos{grid-template-columns:minmax(0,1fr)}}
 .repo{display:grid;gap:6px;padding:16px 18px;text-decoration:none;color:var(--ink);align-content:start}
-.repo:hover{border-color:var(--accent)}
+a.repo:hover{border-color:var(--accent)}
 .repo .path{font-family:var(--font-mono);font-size:var(--t-xs);color:var(--accent);overflow-wrap:anywhere}
 .repo .name{font-family:var(--font-display);font-stretch:104%;font-weight:700;font-size:var(--t-md);line-height:1.25}
 .repo p{font-size:var(--t-sm);color:var(--ink-2)}
@@ -473,16 +494,14 @@ section[id]{scroll-margin-top:72px}
         <a class="src" href="https://github.com/mirzamalikbaig" target="_blank" rel="noopener">All repositories: github.com/mirzamalikbaig</a>
       </div>
       <div class="repos">
-        <a class="sheet repo" href="https://github.com/mirzamalikbaig/spi_controller" target="_blank" rel="noopener">
-          <span class="path">mirzamalikbaig/spi_controller</span>
+        <div class="sheet repo">
           <span class="name">APB-to-SPI controller</span>
           <p>SystemVerilog RTL with an APB register interface and an SPI master state machine. A self-checking testbench runs two writes and two reads in Synopsys VCS.</p>
-        </a>
-        <a class="sheet repo" href="https://github.com/mirzamalikbaig/i2c_controller" target="_blank" rel="noopener">
-          <span class="path">mirzamalikbaig/i2c_controller</span>
+        </div>
+        <div class="sheet repo">
           <span class="name">I²C master controller</span>
           <p>An I²C master in Verilog paired with a behavioral slave model. Simulates a write and a read with ACK handling, checked in GTKWave.</p>
-        </a>
+        </div>
         <a class="sheet repo" href="https://github.com/mirzamalikbaig/memory_verification" target="_blank" rel="noopener">
           <span class="path">mirzamalikbaig/memory_verification</span>
           <span class="name">Synchronous memory testbench</span>
