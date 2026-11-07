@@ -20,7 +20,7 @@ Focus: SystemVerilog and UVM testbenches with scoreboards, functional coverage, 
 
 ## Experience and education
 
-- Verification Intern, Aisemi Pvt. Ltd. (January to April 2024): SystemVerilog RTL and testbenches, simulation and waveform debug with Synopsys tools.
+- Verification Intern, Aisemi Pvt. Ltd. (January to May 2024): SystemVerilog RTL and testbenches, simulation and waveform debug with Synopsys tools.
 - Industrial Trainee, Electronics Corporation of India Limited (November 2019 to March 2020): supervised circuit testing and basic hardware troubleshooting.
 - M.S. in Computer Engineering, CSUN (August 2024 to December 2026).
 - B.E. in Electronics and Communication Engineering, Osmania University (2021 to 2023).
