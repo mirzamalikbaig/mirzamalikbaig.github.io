@@ -7,6 +7,7 @@
 <meta name="description" content="Agha Malik Baig Mirza: M.S. Computer Engineering (CSUN, Dec 2026), design verification with SystemVerilog, UVM, and AMBA APB/AXI4. Looking for full-time Design Verification and RTL roles from January 2027.">
 <link rel="canonical" href="https://mirzamalikbaig.github.io/">
 <meta name="author" content="Agha Malik Baig Mirza">
+<meta name="theme-color" content="#0D0F11" id="tc">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Agha Malik Baig Mirza">
 <meta property="og:url" content="https://mirzamalikbaig.github.io/">
@@ -25,92 +26,141 @@
   "name": "Agha Malik Baig Mirza",
   "alternateName": ["Mirza Malik Baig", "Mirza Agha Malik Baig"],
   "url": "https://mirzamalikbaig.github.io/",
+  "image": "https://mirzamalikbaig.github.io/assets/agha-malik-baig-mirza-800.jpg",
   "description": "M.S. Computer Engineering student at California State University, Northridge (December 2026), focused on design verification with SystemVerilog, UVM, and AMBA APB/AXI4.",
   "knowsAbout": ["Design verification", "SystemVerilog", "UVM", "SystemVerilog Assertions", "AMBA APB", "AXI4", "RTL design"],
   "sameAs": ["https://github.com/mirzamalikbaig", "https://www.linkedin.com/in/mirzamalikbaig"]
 }
 </script>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script>(function(){var d=document.documentElement,t=null;try{t=localStorage.getItem("theme")}catch(e){}if(t!=="light"&&t!=="dark"){t=(window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches)?"light":"dark"}d.setAttribute("data-theme",t);d.classList.add("js");var m=document.getElementById("tc");if(m)m.setAttribute("content",t==="light"?"#F4F2EC":"#0D0F11")})();</script>
+<script>(function(){var d=document.documentElement;if(!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)){d.classList.add("hero-anim");setTimeout(function(){d.classList.remove("hero-anim")},3500)}})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
 <style>
-/* Layout: a verification datasheet. Every section uses one template: a sticky title column on the left, content on the right. Figures (timing diagram, block diagrams, coverage report) sit on raised sheets. */
+/* A verification bench. Dark graphite by default (light for visitors who prefer it), one amber accent taken from the street lights in the portrait, mint only for results and passing data. Flat surfaces, hairline rules, a 48px grid. Each section keeps one template: a sticky numbered title on the left, content on the right. Motion is short and only moves things into place; it is off for visitors who ask for reduced motion. */
 :root{
-  --paper:#F2F4F0;
-  --sheet:#FBFCFA;
-  --ink:#131816;
-  --ink-2:#4B5651;
-  --rule:#D2D9D3;
-  --grid:#E3E8E3;
-  --accent:#0A6A4C;
-  --accent-ink:#FFFFFF;
-  --accent-soft:#DCEEE5;
-  --cursor:#B4650A;
-  --warn:#A35F00;
-  --hatch:#A3ADA7;
+  --paper:#0D0F11;
+  --sheet:#14171A;
+  --ink:#ECE9E1;
+  --ink-2:#A6ABA6;
+  --rule:#2B3035;
+  --grid:#1A1E21;
+  --accent:#F2B34A;
+  --accent-ink:#17120A;
+  --accent-soft:#2A2214;
+  --good:#6FD0A8;
+  --good-soft:#14302A;
+  --cursor:#F2B34A;
+  --warn:#E8806F;
+  --hatch:#5F666B;
   --font-display:"Archivo","Arial Narrow","Helvetica Neue",Arial,sans-serif;
   --font-body:"IBM Plex Sans","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   --font-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Consolas,monospace;
   --t-xs:.78rem; --t-sm:.875rem; --t-base:1rem; --t-md:1.15rem; --t-lg:1.4rem;
-  --t-xl:clamp(1.7rem,3vw,2.2rem); --t-hero:clamp(2.6rem,5.4vw,4.2rem);
-  --radius:6px;
+  --t-xl:clamp(1.7rem,3vw,2.2rem); --t-hero:clamp(2.5rem,6.2vw,5.4rem);
+  --radius:4px;
+  color-scheme:dark;
+}
+:root[data-theme="light"]{
+  --paper:#F4F2EC; --sheet:#FBFAF6; --ink:#17140E; --ink-2:#5A5950; --rule:#D5D1C4; --grid:#E7E3D8;
+  --accent:#8A5400; --accent-ink:#FFFFFF; --accent-soft:#F3E4C6;
+  --good:#0A6A4C; --good-soft:#D8ECE3; --cursor:#B4650A; --warn:#B23A2A; --hatch:#A19D90;
   color-scheme:light;
 }
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --paper:#0D1110; --sheet:#141A18; --ink:#E3E9E5; --ink-2:#9CA8A2; --rule:#2B3430; --grid:#1D2422;
-    --accent:#5DC39B; --accent-ink:#06120D; --accent-soft:#16302A; --cursor:#E9A23B; --warn:#E0A54A; --hatch:#56625C;
-    color-scheme:dark;
+@media (prefers-color-scheme: light){
+  :root:not([data-theme]){
+    --paper:#F4F2EC; --sheet:#FBFAF6; --ink:#17140E; --ink-2:#5A5950; --rule:#D5D1C4; --grid:#E7E3D8;
+    --accent:#8A5400; --accent-ink:#FFFFFF; --accent-soft:#F3E4C6;
+    --good:#0A6A4C; --good-soft:#D8ECE3; --cursor:#B4650A; --warn:#B23A2A; --hatch:#A19D90;
+    color-scheme:light;
   }
-}
-:root[data-theme="dark"]{
-  --paper:#0D1110; --sheet:#141A18; --ink:#E3E9E5; --ink-2:#9CA8A2; --rule:#2B3430; --grid:#1D2422;
-  --accent:#5DC39B; --accent-ink:#06120D; --accent-soft:#16302A; --cursor:#E9A23B; --warn:#E0A54A; --hatch:#56625C;
-  color-scheme:dark;
 }
 
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-body);font-size:var(--t-base);line-height:1.6;-webkit-font-smoothing:antialiased}
+body{margin:0;position:relative;background:var(--paper);color:var(--ink);font-family:var(--font-body);font-size:var(--t-base);line-height:1.6;-webkit-font-smoothing:antialiased}
 img,svg{max-width:100%}
 [hidden]{display:none!important}
 a{color:var(--accent);text-underline-offset:3px}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+body::before{content:"";position:absolute;inset:0 0 auto 0;height:960px;z-index:-1;pointer-events:none;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:48px 48px;-webkit-mask-image:linear-gradient(to bottom,#000 0,transparent 100%);mask-image:linear-gradient(to bottom,#000 0,transparent 100%)}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 p{margin:0}
 .wrap{max-width:1180px;margin-inline:auto;padding-inline:20px}
 
 h1,h2,h3{font-family:var(--font-display);margin:0;text-wrap:balance}
-h1{font-stretch:118%;font-weight:800;font-size:var(--t-hero);line-height:.95;letter-spacing:-.02em}
+h1{font-stretch:125%;font-weight:800;font-size:var(--t-hero);line-height:.92;letter-spacing:-.025em}
 h2{font-stretch:110%;font-weight:750;font-size:var(--t-xl);line-height:1.1;letter-spacing:-.01em}
 h3{font-stretch:104%;font-weight:700;font-size:var(--t-lg);line-height:1.2}
 h4{font-size:var(--t-sm);font-weight:600;margin:0 0 10px;color:var(--ink)}
 .kicker{font-family:var(--font-mono);font-size:var(--t-xs);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:500}
 
 /* header */
-.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);border-bottom:1px solid var(--rule)}
-.top-in{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px}
-.mark{font-family:var(--font-mono);font-size:var(--t-sm);font-weight:600;color:var(--ink);text-decoration:none;white-space:nowrap}
-.nav{display:flex;gap:2px;list-style:none;margin:0;padding:0}
-.nav a{display:block;padding:6px 10px;font-size:var(--t-sm);color:var(--ink-2);text-decoration:none;border-radius:4px}
-.nav a:hover{color:var(--ink);background:var(--grid)}
-.nav a.nav-cta{color:var(--accent-ink);background:var(--accent);font-weight:500}
+.skip{position:absolute;left:12px;top:-64px;z-index:50;padding:10px 14px;background:var(--accent);color:var(--accent-ink);font-weight:600;border-radius:4px;text-decoration:none}
+.skip:focus{top:10px}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--paper);border-bottom:1px solid var(--rule)}
+@supports (background:color-mix(in srgb,red 50%,blue)){.top{background:color-mix(in srgb,var(--paper) 88%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}}
+.top-in{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.progress{position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:0 50%;pointer-events:none}
+.mark{font-family:var(--font-mono);font-size:var(--t-sm);font-weight:600;color:var(--ink);text-decoration:none;white-space:nowrap;letter-spacing:.01em}
+.nav{display:flex;gap:2px;list-style:none;margin:0;padding:0;align-items:center}
+.nav a{display:block;position:relative;padding:12px 11px;font-size:var(--t-sm);color:var(--ink-2);text-decoration:none;border-radius:4px}
+.nav a:hover,.nav a[aria-current="true"]{color:var(--ink)}
+.nav a[aria-current="true"]::after{content:"";position:absolute;left:11px;right:11px;bottom:6px;height:2px;background:var(--accent)}
+.nav a.nav-cta{color:var(--accent-ink);background:var(--accent);font-weight:600;padding:10px 16px;margin-left:8px}
+.nav a.nav-cta::after{display:none}
+.nav a.nav-cta:hover{color:var(--accent-ink);filter:brightness(1.08)}
 @media (max-width:760px){.nav li:not(:last-child){display:none}}
 
 /* hero */
-.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:48px;align-items:center;padding-block:64px 64px}
-@media (max-width:1099px){.hero{grid-template-columns:minmax(0,1fr);gap:36px;padding-block:44px 48px}.hero .fig{max-width:820px}}
-.hero-text{display:grid;gap:22px;min-width:0}
-.role{font-family:var(--font-mono);font-size:var(--t-sm);color:var(--ink-2);letter-spacing:.02em}
-.lede{font-size:var(--t-md);max-width:30em}
-.seeking{display:flex;gap:10px;align-items:flex-start;padding:12px 14px;border:1px solid var(--accent);border-radius:var(--radius);background:var(--accent-soft);font-weight:500;max-width:30em}
-.seeking::before{content:"";flex:none;width:9px;height:9px;margin-top:.5em;border-radius:50%;background:var(--accent)}
+.hero-anim [data-hero]{opacity:0}
+.hero{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:56px;align-items:center;padding-block:80px 72px;min-height:min(84vh,800px)}
+@media (max-width:999px){.hero{grid-template-columns:minmax(0,1fr);gap:44px;padding-block:48px 56px;min-height:0}}
+.hero-text{display:grid;gap:24px;min-width:0;align-content:center}
+.role{font-family:var(--font-mono);font-size:var(--t-sm);color:var(--accent);letter-spacing:.08em;text-transform:uppercase}
+.lede{font-size:var(--t-md);max-width:31em}
+.seeking{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border:1px solid var(--rule);border-left:3px solid var(--accent);background:var(--accent-soft);max-width:31em;font-weight:500}
+.seeking::before{content:"";flex:none;width:9px;height:9px;margin-top:.55em;border-radius:50%;background:var(--accent);animation:ping 2.4s ease-in-out infinite}
+@keyframes ping{0%,100%{opacity:1}50%{opacity:.3}}
 .actions{display:flex;flex-wrap:wrap;gap:10px}
-.btn{display:inline-flex;align-items:center;padding:10px 16px;border:1px solid var(--rule);border-radius:var(--radius);font-weight:500;font-size:var(--t-sm);color:var(--ink);text-decoration:none;background:var(--sheet)}
-.btn:hover{border-color:var(--ink-2)}
-.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border:1px solid var(--rule);border-radius:var(--radius);font-weight:500;font-size:var(--t-sm);color:var(--ink);text-decoration:none;background:transparent;transition:border-color .2s,transform .2s,filter .2s}
+.btn:hover{border-color:var(--ink-2);transform:translateY(-1px)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
+.btn.primary:hover{filter:brightness(1.08)}
+@media (prefers-reduced-motion: reduce){.seeking::before{animation:none}.btn,.btn:hover{transition:none;transform:none}}
+
+/* portrait: framed like a figure in a datasheet, with corner marks and a ruler edge */
+.portrait{justify-self:end;width:min(100%,430px);margin:0}
+@media (max-width:999px){.portrait{justify-self:start;width:min(100%,340px)}}
+.portrait-frame{position:relative;aspect-ratio:4 / 5;padding:10px;background:var(--sheet);border:1px solid var(--rule)}
+.portrait-frame::before,.portrait-frame::after{content:"";position:absolute;width:22px;height:22px;border:2px solid var(--accent);pointer-events:none}
+.portrait-frame::before{top:-7px;left:-7px;border-right:0;border-bottom:0}
+.portrait-frame::after{bottom:-7px;right:-7px;border-left:0;border-top:0}
+.portrait-media{position:relative;width:100%;height:100%;overflow:hidden}
+.portrait-media picture,.portrait-media img{display:block;width:100%;height:100%}
+.portrait-media img{object-fit:cover;object-position:50% 20%}
+.ruler{position:absolute;top:0;bottom:0;right:-17px;width:9px;background:repeating-linear-gradient(to bottom,var(--hatch) 0 1px,transparent 1px 12px)}
+@media (max-width:1099px){.ruler{display:none}}
+.portrait figcaption{margin-top:16px;display:flex;justify-content:space-between;gap:12px;font-family:var(--font-mono);font-size:var(--t-xs);color:var(--ink-2);letter-spacing:.04em}
+
+/* results strip: numbers taken from the project write-ups below */
+.stats{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-block:1px solid var(--rule)}
+.stats li{border-left:1px solid var(--rule)}
+.stats li:first-child{border-left:0}
+.stat{display:grid;gap:8px;align-content:start;height:100%;padding:28px 20px 26px;color:var(--ink);text-decoration:none;transition:background-color .2s}
+.stats li:first-child .stat{padding-left:0}
+.stat:hover{background:var(--sheet)}
+.stat .n{font-family:var(--font-display);font-stretch:118%;font-weight:800;font-size:clamp(2.1rem,3.8vw,3.1rem);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.stat .u{color:var(--accent)}
+.stat .l{font-weight:600}
+.stat .d{color:var(--ink-2);font-size:var(--t-sm)}
+@media (max-width:899px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stats li:nth-child(3){border-left:0}.stats li:nth-child(n+3){border-top:1px solid var(--rule)}.stats li:nth-child(odd) .stat{padding-left:0}}
+@media (max-width:519px){.stats{grid-template-columns:minmax(0,1fr)}.stats li{border-left:0}.stats li + li{border-top:1px solid var(--rule)}.stat{padding-left:0}}
+@media (min-width:700px) and (max-width:999px){.hero{grid-template-columns:minmax(0,1fr) 300px;gap:40px;align-items:start}.portrait{justify-self:end;width:300px}}
+@media (prefers-reduced-motion: reduce){.stat{transition:none}}
 
 /* sheets and figures */
 .sheet{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--radius)}
@@ -126,22 +176,22 @@ figure{margin:0}
 .wv text{font-family:var(--font-mono)}
 .wv .lbl{font-size:12.5px;fill:var(--ink)}
 .wv .lbl-ev{fill:var(--ink-2)}
-.wv .val{font-size:12.5px;fill:var(--accent);font-weight:600}
+.wv .val{font-size:12.5px;fill:var(--good);font-weight:600}
 .wv .hdr{font-size:10px;fill:var(--ink-2);letter-spacing:.08em}
 .wv .tick{font-size:10.5px;fill:var(--ink-2)}
-.wv .grp{font-size:10.5px;fill:var(--accent);font-weight:600;letter-spacing:.12em}
+.wv .grp{font-size:10.5px;fill:var(--good);font-weight:600;letter-spacing:.12em}
 .wv .phase{font-size:10px;fill:var(--ink-2)}
-.wv .grpline{stroke:var(--accent);stroke-width:1}
+.wv .grpline{stroke:var(--good);stroke-width:1}
 .wv .edge{stroke:var(--rule);stroke-width:1;stroke-dasharray:2 3}
 .wv .row{stroke:var(--grid);stroke-width:1}
 .wv .divider{stroke:var(--rule);stroke-width:1}
 .wv .sig{fill:none;stroke:var(--ink);stroke-width:1.5;stroke-linejoin:round}
 .wv .clk{stroke:var(--ink-2)}
-.wv .bus{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.2;stroke-linejoin:round}
+.wv .bus{fill:var(--good-soft);stroke:var(--good);stroke-width:1.2;stroke-linejoin:round}
 .wv .bus-x{fill:url(#hatch);stroke:var(--hatch);stroke-width:1}
 .wv .hl{stroke:var(--hatch);stroke-width:1.2}
 .wv .bus-t{font-size:12px;fill:var(--ink)}
-.wv .ev{fill:var(--accent)}
+.wv .ev{fill:var(--good)}
 .wv .ev-t{font-size:11.5px;fill:var(--ink)}
 .wv .cur{stroke:var(--cursor);stroke-width:1.6}
 
@@ -150,19 +200,19 @@ figure{margin:0}
 .dg .box{fill:var(--sheet);stroke:var(--ink-2);stroke-width:1.2}
 .dg .frame{fill:none;stroke:var(--hatch);stroke-width:1.1;stroke-dasharray:5 4}
 .dg .frame-l{font-size:10px;fill:var(--ink-2);letter-spacing:.1em}
-.dg .dut{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.5}
+.dg .dut{fill:var(--good-soft);stroke:var(--good);stroke-width:1.5}
 .dg .comp{font-size:12.5px}
 .dg .comp-b{font-weight:600}
 .dg .wire{fill:none;stroke:var(--ink-2);stroke-width:1.3}
 .dg .wire-d{stroke-dasharray:4 3}
 .dg .ah{fill:var(--ink-2)}
 .dg .note{font-size:10.5px;fill:var(--ink-2)}
-.dg .ch{font-size:12.5px;font-weight:600;fill:var(--accent)}
+.dg .ch{font-size:12.5px;font-weight:600;fill:var(--good)}
 
 /* section template: sticky title left, content right */
-section[id]{scroll-margin-top:72px}
+section[id]{scroll-margin-top:84px}
 .sec{display:grid;grid-template-columns:minmax(0,240px) minmax(0,1fr);gap:28px 56px;padding-block:72px;border-top:1px solid var(--rule)}
-.sec-label{display:grid;gap:10px;align-content:start;align-self:start;position:sticky;top:calc(env(safe-area-inset-top,0px) + 80px)}
+.sec-label{display:grid;gap:10px;align-content:start;align-self:start;position:sticky;top:calc(env(safe-area-inset-top,0px) + 92px)}
 .sec-label p{color:var(--ink-2);font-size:var(--t-sm)}
 .sec-body{min-width:0}
 @media (max-width:999px){.sec{grid-template-columns:minmax(0,1fr);padding-block:56px}.sec-label{position:static}}
@@ -197,13 +247,13 @@ section[id]{scroll-margin-top:72px}
 .cov .num{font-family:var(--font-mono);font-variant-numeric:tabular-nums;text-align:right;padding-right:16px;white-space:nowrap}
 .cov .bar-cell{width:45%}
 .bar{display:block;height:10px;background:var(--grid);border-radius:2px;overflow:hidden}
-.bar i{display:block;height:100%;width:calc(var(--v) * 1%);background:var(--accent)}
+.bar i{display:block;height:100%;width:calc(var(--v) * 1%);background:var(--good)}
 .bar.part i{background:var(--warn)}
 
 .chain{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
 .chain li{display:flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:var(--t-sm)}
 .chain li span{padding:6px 10px;border:1px solid var(--rule);border-radius:4px;background:var(--paper)}
-.chain li.dut span{border-color:var(--accent);background:var(--accent-soft);font-weight:600}
+.chain li.dut span{border-color:var(--good);background:var(--good-soft);font-weight:600}
 .chain li:not(:last-child)::after{content:"\2192";color:var(--ink-2)}
 @media (max-width:560px){
   .chain{flex-direction:column;align-items:flex-start}
@@ -232,7 +282,7 @@ a.repo:hover{border-color:var(--accent)}
 .matrix thead small{display:block;font-weight:400;text-transform:none;letter-spacing:0}
 .matrix tbody th{text-align:left;font-weight:500}
 .matrix td{text-align:center;width:13%}
-.matrix td.y::before{content:"";display:inline-block;width:12px;height:12px;border-radius:2px;background:var(--accent);vertical-align:middle}
+.matrix td.y::before{content:"";display:inline-block;width:12px;height:12px;border-radius:2px;background:var(--good);vertical-align:middle}
 .matrix td.n::before{content:"";display:inline-block;width:4px;height:4px;border-radius:50%;background:var(--hatch);vertical-align:middle}
 .toolkit{margin:32px 0 0;border-top:1px solid var(--rule)}
 .toolkit div{display:grid;grid-template-columns:200px minmax(0,1fr);gap:2px 20px;padding-block:12px;border-bottom:1px solid var(--grid)}
@@ -264,10 +314,38 @@ a.repo:hover{border-color:var(--accent)}
 @media (max-width:520px){.clist li{grid-template-columns:minmax(0,1fr) auto;gap:4px 12px}.clist .k{grid-column:1 / -1}}
 
 .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-block:28px 40px;border-top:1px solid var(--rule);font-family:var(--font-mono);font-size:var(--t-xs);color:var(--ink-2)}
+
+/* theme switch: a bulb on a cord. Dark is "lights off"; pulling the cord turns the light theme on. Hidden until the script runs. */
+.lamp{display:none}
+.js .lamp{display:flex;align-items:center}
+.cord{display:none}
+.bulb{width:44px;height:44px;display:grid;place-items:center;padding:0;border:1px solid var(--rule);border-radius:50%;background:var(--sheet);color:var(--ink-2);cursor:pointer;transition:border-color .2s,color .2s,background-color .2s}
+.bulb:hover{border-color:var(--ink-2);color:var(--ink)}
+.bulb svg{width:22px;height:27px;display:block;overflow:visible}
+.bulb .glass{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linejoin:round}
+.bulb .fil{fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.bulb .base{fill:currentColor}
+:root[data-theme="light"] .bulb{color:#8A5400;border-color:#D9A84E;background:#FFF1D2}
+:root[data-theme="light"] .bulb .glass{fill:#FFD15C}
+:root[data-theme="light"] .bulb svg{filter:drop-shadow(0 0 5px rgba(255,185,60,.85))}
+@media (max-width:420px){.top-in{gap:10px}.mark{font-size:.8rem}.bulb{width:40px;height:40px}.nav a.nav-cta{padding:10px 12px;margin-left:0}}
+@media (min-width:1320px){
+  .js .lamp{position:absolute;right:14px;top:100%;flex-direction:column;pointer-events:none}
+  .lamp > *{pointer-events:auto}
+  .cord{display:block;width:2px;height:58px;background:var(--ink-2);border-radius:1px}
+  .bulb{margin-top:-1px}
+}
+.theme-fade,.theme-fade *{transition:background-color .35s ease,color .35s ease,border-color .35s ease,fill .35s ease,stroke .35s ease!important}
+
+/* section numbers */
+main{counter-reset:sec}
+.sec-label::before{counter-increment:sec;content:counter(sec,decimal-leading-zero);font-family:var(--font-mono);font-size:var(--t-xs);letter-spacing:.1em;color:var(--accent)}
+@media print{[data-rv]{opacity:1!important}.progress{display:none}}
 </style>
 </head>
 <body>
 
+<a class="skip" href="#top">Skip to content</a>
 <header class="top">
   <div class="wrap top-in">
     <a class="mark" href="#top">Agha Malik Baig Mirza</a>
@@ -281,31 +359,58 @@ a.repo:hover{border-color:var(--accent)}
         <li><a class="nav-cta" href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <div class="lamp">
+      <span class="cord" aria-hidden="true"></span>
+      <button class="bulb" type="button" aria-label="Light mode" aria-pressed="false" title="Switch between dark and light theme">
+        <svg viewBox="0 0 24 30" aria-hidden="true" focusable="false">
+          <path class="glass" d="M12 2.2a7.6 7.6 0 0 0-4.4 13.8c.8.6 1.3 1.5 1.3 2.5v1.6h6.2v-1.6c0-1 .5-1.9 1.3-2.5A7.6 7.6 0 0 0 12 2.2z"/>
+          <path class="fil" d="M9.6 13.2 12 10.4l2.4 2.8M12 10.4v8.2"/>
+          <rect class="base" x="8.6" y="21.4" width="6.8" height="2" rx=".7"/>
+          <rect class="base" x="9.4" y="24.2" width="5.2" height="2" rx=".7"/>
+        </svg>
+      </button>
+    </div>
   </div>
+  <div class="progress" aria-hidden="true"></div>
 </header>
 
 <main id="top">
 
 <section class="wrap hero" aria-labelledby="name">
   <div class="hero-text">
-    <h1 id="name">Agha Malik<br>Baig Mirza</h1>
-    <p class="role">Design Verification · M.S. Computer Engineering, CSUN</p>
-    <p class="lede">I build SystemVerilog and UVM testbenches with scoreboards and functional coverage, plus constrained-random stimulus and assertions in my AXI4 environment, mostly for AMBA APB and AXI4 designs.</p>
-    <p class="seeking">Looking for full-time Design Verification and RTL roles starting January 2027.</p>
-    <div class="actions">
+    <p class="role" data-hero>Design Verification · M.S. Computer Engineering, CSUN</p>
+    <h1 id="name" data-hero>Agha Malik<br>Baig Mirza</h1>
+    <p class="lede" data-hero>I build SystemVerilog and UVM testbenches with scoreboards and functional coverage, plus constrained-random stimulus and assertions in my AXI4 environment, mostly for AMBA APB and AXI4 designs.</p>
+    <p class="seeking" data-hero>Looking for full-time Design Verification and RTL roles starting January 2027.</p>
+    <div class="actions" data-hero>
       <a class="btn primary" href="#contact">Get in touch</a>
       <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
       <a class="btn" href="https://github.com/mirzamalikbaig" target="_blank" rel="noopener">GitHub</a>
       <a class="btn" href="https://www.linkedin.com/in/mirzamalikbaig" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
-  <figure class="sheet fig">
-    <div class="scroll-x">
-      <svg id="wave" class="wv" role="img" aria-label="Timing diagram: an APB write of 0xA5 to address 0x04, then a read of the same address that returns 0xA5. The scoreboard reports a match."></svg>
+  <figure class="portrait" data-hero>
+    <div class="portrait-frame">
+      <div class="portrait-media">
+        <picture>
+          <source type="image/webp" srcset="assets/agha-malik-baig-mirza-480.webp 480w, assets/agha-malik-baig-mirza-800.webp 800w" sizes="(min-width:1000px) 410px, 340px">
+          <img src="assets/agha-malik-baig-mirza-800.jpg" srcset="assets/agha-malik-baig-mirza-480.jpg 480w, assets/agha-malik-baig-mirza-800.jpg 800w" sizes="(min-width:1000px) 410px, 340px" width="800" height="1000" alt="Portrait of Agha Malik Baig Mirza in a black suit jacket, smiling, photographed at night" fetchpriority="high" decoding="async">
+        </picture>
+      </div>
+      <span class="ruler" aria-hidden="true"></span>
     </div>
-    <figcaption class="fig-cap">The write-then-read data check from my APB project, drawn as a timing diagram. Hover (or tap on a phone) to move the cursor; the second column shows each signal's value at that time.</figcaption>
+    <figcaption><span>Northridge, California</span><span>CSUN · Dec 2026</span></figcaption>
   </figure>
 </section>
+
+<div class="wrap">
+  <ul class="stats" aria-label="Results from my projects">
+    <li><a class="stat" href="#axi4"><span class="n"><span data-count="98.15">98.15</span><span class="u">%</span></span><span class="l">Functional coverage</span><span class="d">AXI4 UVM environment, recorded VCS run</span></a></li>
+    <li><a class="stat" href="#axi4"><span class="n"><span data-count="0">0</span></span><span class="l">UVM errors</span><span class="d">Across 12 directed scenarios on AXI4</span></a></li>
+    <li><a class="stat" href="#apb"><span class="n"><span data-count="100">100</span><span class="u">%</span></span><span class="l">Functional coverage at closure</span><span class="d">APB memory UVM environment</span></a></li>
+    <li><a class="stat" href="#fifo"><span class="n">6<span class="u"> + </span>7</span><span class="l">SVA checks and directed tests</span><span class="d">Gray-coded asynchronous FIFO</span></a></li>
+  </ul>
+</div>
 
 <section id="about" class="wrap sec" aria-labelledby="about-h">
   <div class="sec-label">
@@ -321,6 +426,21 @@ a.repo:hover{border-color:var(--accent)}
       <div><dt>Location</dt><dd>Northridge, California</dd></div>
       <div><dt>Looking for</dt><dd>Full-time DV and RTL roles, January 2027</dd></div>
     </dl>
+  </div>
+</section>
+
+<section id="signal" class="wrap sec" aria-labelledby="signal-h">
+  <div class="sec-label">
+    <h2 id="signal-h">Timing diagram</h2>
+    <p>A simulated APB write and read from my project. The scoreboard stores the written value and matches it on the read.</p>
+  </div>
+  <div class="sec-body">
+    <figure class="sheet fig">
+    <div class="scroll-x">
+      <svg id="wave" class="wv" role="img" aria-label="Timing diagram: an APB write of 0xA5 to address 0x04, then a read of the same address that returns 0xA5. The scoreboard reports a match."></svg>
+    </div>
+    <figcaption class="fig-cap">The write-then-read data check from my APB project, drawn as a timing diagram. Hover (or tap on a phone) to move the cursor; the second column shows each signal's value at that time.</figcaption>
+  </figure>
   </div>
 </section>
 
@@ -651,7 +771,7 @@ a.repo:hover{border-color:var(--accent)}
 
 <footer class="wrap foot">
   <span>© 2026 Agha Malik Baig Mirza</span>
-  <span>Northridge, California · Updated October 2026</span>
+  <span>Northridge, California · Updated November 2026</span>
 </footer>
 
 <script>
@@ -809,5 +929,8 @@ document.querySelectorAll('[data-copy]').forEach(function(btn){
   });
 });
 </script>
+<script defer src="assets/motion-14.5.0.min.js"></script>
+<script defer src="assets/site-motion.js"></script>
+<script defer src="assets/theme.js"></script>
 </body>
 </html>
